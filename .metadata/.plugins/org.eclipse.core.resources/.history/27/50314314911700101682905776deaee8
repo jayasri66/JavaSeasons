@@ -1,0 +1,21 @@
+package homework;
+
+public class Class3 {
+
+	public void m7()
+	{
+		m8();
+	    m9();
+		System.out.println("I'm in class 3 & method m7");
+		
+	}
+    public void m8()
+	{
+    	
+		System.out.println("I'm in class 3 & method m8");
+	}
+	public void m9()
+	{
+		System.out.println("I'm in class 3 & method m9");
+	}
+}

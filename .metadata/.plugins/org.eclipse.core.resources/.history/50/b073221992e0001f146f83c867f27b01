@@ -1,0 +1,23 @@
+package polymorphism;
+
+public class AssignmentTest {
+
+	public static void main(String[] args) {
+		//Assignment obj=new Assignment();
+		//obj.setAadhar("REWSM5478K");
+		//obj.setAadhar("REWSM5478K", "KJN1478523");
+		//obj.setAadhar("REWSM5478K", "KJN1478523","F65478213");
+       // obj.getAadhar();
+    	System.out.print("Aadhar number with pancard is " + (int)(Math.random()*10000) + " ");
+		System.out.print((int)(Math.random()*10000) + " ");
+		System.out.println((int)(Math.random()*10000) + " ");
+		System.out.print("Aadhar number with pancard & voterid is " + (int)(Math.random()*10000) + " ");
+		System.out.print((int)(Math.random()*10000) + " ");
+		System.out.println((int)(Math.random()*10000) + " ");
+		System.out.print("Aadhar number with pancard, voterid & passport is " + (int)(Math.random()*10000) + " ");
+		System.out.print((int)(Math.random()*10000) + " ");
+		System.out.print((int)(Math.random()*10000) + " ");
+	}
+	
+	
+}

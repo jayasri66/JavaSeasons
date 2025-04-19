@@ -1,0 +1,43 @@
+public class Practice3 {
+	WebDriver driver;
+	WebElement nextElement;
+	
+	int i=2;
+	
+	@BeforeMethod
+	public void setUp()
+	{
+		driver=new ChromeDriver();
+		driver.get("https://www.flipkart.com/");
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+	}
+	@Test
+	public void flipkartTest() throws InterruptedException
+	{
+		driver.findElement(By.xpath("//input[@title='Search for Products, Brands and More']")).sendKeys("iphone");
+	    Thread.sleep(3000);
+	    driver.findElement(By.xpath("//button[@type='submit']")).click();
+	    Thread.sleep(3000);
+	    nextElement=driver.findElement(By.xpath("//a[@class='_9QVEpD']"));
+	   // nextElement.click();
+	    List<WebElement> allProductNames=driver.findElements(By.xpath("//div[@class='KzDlHZ']"));
+	   // List<WebElement>page1Links= driver.findElements(By.xpath("//nav[@class='WSL9JP']//a"));
+	 // while(!nextElement.isDisplayed())
+	// {
+		for(i=2;i<=25;i++)
+		 {
+		String path="//nav[@class='WSL9JP']//a[text()='"+i+"']";
+			driver.findElement(By.xpath(path)).click();
+			 for(WebElement product : allProductNames)
+			 {
+				 allProductNames=driver.findElements(By.xpath("//div[@class='KzDlHZ']"));
+				 System.out.println(i +" "+product.getText());
+				JavascriptExecutor js=(JavascriptExecutor) driver;
+			   js.executeScript("arguments[0].click();", nextElement);
+				 //nextElement.click();
+			    
+			 }
+					  
+		 }
+	 }

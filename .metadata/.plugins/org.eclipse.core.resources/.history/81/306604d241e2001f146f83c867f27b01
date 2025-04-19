@@ -1,0 +1,22 @@
+package polymorphism;
+
+public class Assignment3 {
+
+	String panCard, voterId,passport;
+	public void Aadhar(String panCard)
+	{
+		this.panCard=panCard;
+	}
+	public void Aadhar(String panCard, String voterId)
+	{
+		this.panCard=panCard;
+		this.voterId=voterId;
+	}
+	public void Aadhar(String panCard, String voterId, String passport)
+	{
+		this.panCard=panCard;
+		this.voterId=voterId;
+		this.passport=passport;
+	}
+	
+}

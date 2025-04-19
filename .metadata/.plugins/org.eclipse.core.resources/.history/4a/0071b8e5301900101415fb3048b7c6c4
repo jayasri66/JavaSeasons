@@ -1,0 +1,13 @@
+package homework;
+
+public class Employee2  {
+
+	public static void main(String[] args) {
+		
+		EmployeeData2 obj= new EmployeeData2(1234567891,5236,"gdhbh@gmail.com","Ritu");
+		//obj.employeeDetails(123, "12356@gmail.com", "asdf", 1234567891);
+
+	}
+
+	
+}

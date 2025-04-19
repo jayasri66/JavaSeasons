@@ -1,0 +1,25 @@
+package webdrivermethods;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Irctc {
+
+	public static void main(String[] args) throws InterruptedException {
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://www.irctc.co.in/nget/train-search");
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+		driver.findElement(By.xpath("//a[text()=' LOGIN ']")).click();
+		driver.findElement(By.xpath("//input[@placeholder='User Name']")).sendKeys("JayaSri66");
+        driver.findElement(By.xpath("//input[@placeholder='Password']")).sendKeys("Sep@2024");
+        Thread.sleep(10000);
+        driver.findElement(By.xpath("//button[text()='SIGN IN']")).click();
+        driver.findElement(By.xpath("//span[text()='Logout']")).click();
+        driver.quit();
+	}
+
+}

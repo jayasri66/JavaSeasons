@@ -1,0 +1,11 @@
+package polymorphism;
+import java.util.Scanner;
+public class Assignment3Test {
+
+	public static void main(String[] args) {
+		
+		Assignment3 obj=new Assignment3();
+		obj.Aadhar();
+	}
+
+}

@@ -1,0 +1,25 @@
+package broswerlaunch;
+
+import java.time.Duration;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class IEBrowserLaunch {
+
+	public static void main(String[] args) {
+		WebDriver driver= new InternetExplorerDriver();
+		WebDriverWait wait= new WebDriverWait(driver,Duration.ofSeconds(60));
+		wait.until(ExpectedConditions.urlContains("http://www.greenstechnologys.com/"));
+		//driver.get("http://www.greenstechnologys.com/");
+		//driver.navigate().to("http://www.greenstechnologys.com/");
+		wait.until(ExpectedConditions.urlContains("http://www.flipkart.com/"));
+		//driver.navigate().to("http://www.flipkart.com/");
+		//driver.navigate().to("http://greenstech.in/selenium-course-content.html");
+        driver.quit();
+
+	}
+
+}

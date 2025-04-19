@@ -1,0 +1,41 @@
+package polymorphism;
+
+import java.util.Scanner;
+
+public class Practice {
+
+	int studentId;
+	String studentName;
+	int marks1,marks2,marks3,marks4,marks5,marks6,total;
+	double average;
+public void studentDetails()
+{
+	Scanner s1=new Scanner(System.in);
+	System.out.println("enter student name " );
+	studentName=s1.next();
+	System.out.println("enter studentid " );
+	studentId=s1.nextInt();
+	
+    System.out.println("enter marks1 " );
+	marks1=s1.nextInt();
+	System.out.println("enter marks2" );
+	marks2=s1.nextInt();
+	System.out.println("enter marks3 " );
+	marks3=s1.nextInt();
+	System.out.println("enter marks4 " );
+	marks4=s1.nextInt();
+	System.out.println("enter marks5 " );
+	marks5=s1.nextInt();
+	System.out.println("enter marks6 " );
+	marks6=s1.nextInt();
+	System.out.println("Total is " +(marks1+marks2+marks3+marks4+marks5+marks6) );
+	
+	System.out.println("Average is " + (marks1+marks2+marks3+marks4+marks5+marks6)/6 );
+	
+}
+public static void main(String args[])
+{
+	Practice p1 = new Practice();
+	p1.studentDetails();
+}
+}

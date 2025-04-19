@@ -1,0 +1,19 @@
+package polymorphism;
+
+import java.util.Scanner;
+
+public class Assignment3 {
+
+	String panCard, voterId,passport;
+	public void Aadhar()
+	{
+	System.out.println("Enter some value for pancard");
+	Scanner m1= new Scanner(System.in);
+	panCard=m1.nextLine();
+	System.out.println("Enter some value for pancard");
+	voterId=m1.nextLine();
+	System.out.println("Enter some value for pancard");
+	passport=m1.nextLine();
+	System.out.println();
+}
+}

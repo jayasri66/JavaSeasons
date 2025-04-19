@@ -1,0 +1,16 @@
+package homework;
+
+public class EmployeeData1 {
+	int mobileNumber;
+	int empId;
+	String email;
+	String empName;
+	public EmployeeData1(int mobileNumber,int empId,String email,String empName)
+	{
+		this.mobileNumber = mobileNumber;
+        this.empId = empId;
+        this.email = email;
+        this.empName = empName;	
+	}
+
+}

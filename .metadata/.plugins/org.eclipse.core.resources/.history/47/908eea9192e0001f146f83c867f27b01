@@ -1,0 +1,27 @@
+package polymorphism;
+
+public class Assignment 
+{
+ String panCard,voterId,passport;
+
+	public void Aadhar(String panCard)
+	{
+	System.out.print("Aadhar number with " + panCard + " is " + (int)(Math.random()*10000) + " ");
+	System.out.print((int)(Math.random()*10000) + " ");
+	System.out.println((int)(Math.random()*10000) + " ");
+	}
+	public void Aadhar(String panCard, String voterId)
+	{
+	System.out.print("Aadhar number with " + panCard  + voterId  + " is " + (int)(Math.random()*10000) + " ");
+	System.out.print((int)(Math.random()*10000) + " ");
+	System.out.println((int)(Math.random()*10000) + " ");
+    }
+	public void Aadhar(String panCard, String voterId, String passport)
+	{
+		System.out.print("Aadhar number with " + panCard  + voterId  + passport  + " is " + (int)(Math.random()*10000) + " ");
+		System.out.print((int)(Math.random()*10000) + " ");
+		System.out.println((int)(Math.random()*10000) + " ");
+	}
+	
+}
+	
